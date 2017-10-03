@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>{{title}}</ion-title>
+      <ion-buttons left>
+        <button ion-button icon-only (click)="dismiss()">
+          <ion-icon name="md-close"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <ion-content no-padding>
+    <!--
+      <vg-player>
+          <vg-overlay-play></vg-overlay-play>
+          <vg-buffering></vg-buffering> 
+    
+          <vg-scrub-bar>
+              <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+          </vg-scrub-bar>
+          <vg-controls>
+              <vg-play-pause></vg-play-pause>
+      
+              <vg-time-display vgProperty="current" vgFormat="hh:mm:ss"></vg-time-display>
+      
+              <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+      
+              <vg-time-display vgProperty="total" vgFormat="hh:mm:ss"></vg-time-display>
+    
+              <vg-playback-button></vg-playback-button>
+    
+              <vg-mute></vg-mute>
+              <vg-volume></vg-volume>
+      
+              <vg-fullscreen></vg-fullscreen>
+          </vg-controls>
+          <video [vgMedia]="media" #media id="videos" [src]="url" webkit-playsinline autoplay></video>
+        </vg-player>
+      -->
+      <video id="videos" [src]="url" webkit-playsinline autoplay controls></video>
+  </ion-content>
